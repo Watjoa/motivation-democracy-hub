@@ -1,20 +1,20 @@
 ---
-title: "Toward a Psychology of Democratic Well‑Being"
-subtitle: "A curated, living repository that integrates cross‑national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well‑being and civic engagement. Built for cumulative, open, and policy‑relevant science."
 toc: false
 bibliography: references.bib
 csl: apa.csl
 ---
 
-<!-- ::: {.columns style="display:flex; gap:1em;"} -->
-<!-- ::: {.column width="35%"} -->
-<!-- ![](datahublogo.png) -->
+::: {.columns style="display:flex; gap:1em;"}
+::: {.column width="65%"}
 
-<!-- ::: -->
-<!-- ::: {.column width="65%"} -->
+# Toward a Psychology of Democratic Well‑Being
 
-<!-- ::: -->
-<!-- ::: -->
+#### A curated, living repository that integrates cross‑national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well‑being and civic engagement. Built for cumulative, open, and policy‑relevant science.
+:::
+::: {.column width="35%"}
+![](datahublogo.png)
+:::
+:::
 
 ## Concept note
 
