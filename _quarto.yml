@@ -21,7 +21,8 @@ website:
     background: light
     logo: "datahublogo.png"
     logo-alt: "logo."
-    collapse-below: lg
+    #collapse-below: lg
+    style: "fixed"
     right:
       - icon: github
         href: https://github.com/Watjoa
