@@ -5,7 +5,7 @@ project:
 website:
   title: "Motivation & Democracy Data Hub"
  #image: "datahublogo.png"
-  # favicon: "favicon.png"
+  favicon: "datahublogo.png"
   # google-analytics: "G-FV9Z7SDZ0M"
  # open-graph: true
   repo-actions: [edit, issue]
