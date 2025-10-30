@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Cross-national, longitudinal, and experimental data on democracy, psychological needs, and well-being.">
 
-<title>Motivation &amp; Democracy Data Hub</title>
+<title>Toward a Psychology of Democratic Well‑Being – Motivation &amp; Democracy Data Hub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -37,10 +56,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-98f96ea811f72b9932f71149f090c4ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b6b7d78c84ad8c48a3a97f0a94a5cdea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-98f96ea811f72b9932f71149f090c4ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,83 +91,257 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
 
+<link rel="stylesheet" href="styles.css">
+<meta name="twitter:title" content="Toward a Psychology of Democratic Well‑Being – Motivation &amp; Democracy Data Hub">
+<meta name="twitter:description" content="A curated, living repository that integrates cross‑national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well‑being and civic engagement. Built for cumulative, open, and policy‑relevant science.">
+<meta name="twitter:image" content="datahublogo.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./datahublogo.png" alt="logo." class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Motivation &amp; Democracy Data Hub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./dashboards/explore.html"> 
-<span class="menu-text">Explore</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-docs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Docs</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-docs">    
-        <li>
-    <a class="dropdown-item" href="./data/metadata/codebook_v1.csv">
- <span class="dropdown-text">Codebook</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./governance/ACCESS_POLICY.html">
- <span class="dropdown-text">Governance</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./governance/CONTRIBUTING.html">
- <span class="dropdown-text">Contribute</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+        <div class="quarto-navbar-tools tools-end">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
+          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Toward a Psychology of Democratic Well‑Being</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#concept-note" id="toc-concept-note" class="nav-link active" data-scroll-target="#concept-note">Concept note</a></li>
+  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">Explore</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  <li><a href="#governance-ethics" id="toc-governance-ethics" class="nav-link" data-scroll-target="#governance-ethics">Governance &amp; ethics</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Motivation &amp; Democracy Data Hub</h1>
+<h1 class="title">Toward a Psychology of Democratic Well‑Being</h1>
+<p class="subtitle lead">A curated, living repository that integrates cross‑national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well‑being and civic engagement. Built for cumulative, open, and policy‑relevant science.</p>
 </div>
 
-<div>
-  <div class="description">
-    Cross-national, longitudinal, and experimental data on democracy, psychological needs, and well-being.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -159,264 +356,120 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<header>
-<div class="container nav">
-<pre><code>&lt;a class="brand" href="#top" aria-label="Home"&gt;
-  &lt;span class="logo" aria-hidden="true"&gt;
-    &lt;svg viewBox="0 0 24 24" width="20" height="20" role="img" aria-label="logo"&gt;&lt;path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/&gt;&lt;/svg&gt;
-  &lt;/span&gt;
-  &lt;h1&gt;Motivation &amp; Democracy Data Hub&lt;/h1&gt;
-&lt;/a&gt;
-&lt;nav class="menu" aria-label="Primary"&gt;
-  &lt;a href="#about"&gt;About&lt;/a&gt;
-  &lt;a href="#concept"&gt;Concept&lt;/a&gt;
-  &lt;a href="#structure"&gt;Structure&lt;/a&gt;
-  &lt;a href="#explore"&gt;Explore&lt;/a&gt;
-  &lt;a href="#docs"&gt;Docs&lt;/a&gt;
-  &lt;a href="#governance"&gt;Governance&lt;/a&gt;
-&lt;/nav&gt;</code></pre>
+<!-- ::: {.columns style="display:flex; gap:1em;"} -->
+<!-- ::: {.column width="35%"} -->
+<!-- ![](datahublogo.png) -->
+<!-- ::: -->
+<!-- ::: {.column width="65%"} -->
+<!-- ::: -->
+<!-- ::: -->
+<section id="concept-note" class="level2">
+<h2 class="anchored" data-anchor-id="concept-note">Concept note</h2>
+<div class="columns" style="display:flex; gap:1em;">
+<div class="column bg-blue" style="width:55%;">
+<p><strong>Purpose</strong></p>
+<p>The Hub curates datasets, metadata, and reproducible code connecting democratic quality, psychological need dynamics, well‑being, and civic attitudes. It offers public aggregates for transparency and governed access for partner microdata.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Rationale">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-</header>
-<main id="top" class="container">
-<section class="hero" id="about">
-<h2 class="anchored">
-Toward a Psychology of Democratic Well-Being
-</h2>
-<p class="muted">
-A curated, living repository that integrates cross-national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well-being and civic engagement. Built for cumulative, open, and policy-relevant science.
-</p>
-<div class="cta-row">
-<pre><code>&lt;a class="btn" href="#explore"&gt;Explore Indicators&lt;/a&gt;
-&lt;a class="btn secondary" href="#docs"&gt;Get the Docs&lt;/a&gt;</code></pre>
+<div class="callout-title-container flex-fill">
+Rationale
 </div>
-<div class="toc">
-<pre><code>&lt;a href="#concept"&gt;Concept Note&lt;/a&gt;
-&lt;a href="#structure"&gt;Data &amp; Code&lt;/a&gt;
-&lt;a href="#governance"&gt;Access &amp; Ethics&lt;/a&gt;</code></pre>
 </div>
-</section>
-<section id="concept">
-<h3 class="anchored">
-Concept Note
-</h3>
-<div class="grid cols-2">
-<pre><code>&lt;article class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Purpose&lt;/h4&gt;
-  &lt;p&gt;The Hub curates datasets, metadata, and reproducible code connecting democratic quality, psychological need dynamics, well-being, and civic attitudes. It offers public aggregates for transparency and governed access for partner microdata.&lt;/p&gt;
-  &lt;div class="callout small" role="note" aria-label="Rationale"&gt;
-    &lt;strong&gt;Rationale.&lt;/strong&gt; Democracies aim to create conditions for human flourishing, yet democratic discontent is rising. By mapping when systems support or thwart citizens’ needs, we clarify why democracies sometimes enhance mental health—and why, under threat, citizens may prefer autocratic solutions.
-  &lt;/div&gt;
-&lt;/article&gt;
-&lt;article class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Scope&lt;/h4&gt;
-  &lt;ul class="list small"&gt;
-    &lt;li&gt;&lt;strong&gt;Datasets:&lt;/strong&gt; cross-national surveys; national panels; experiments; validated short scales.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Metadata:&lt;/strong&gt; codebooks, translations, invariance reports, sampling frames, weights, changelogs.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Analytics:&lt;/strong&gt; preregistered pipelines for harmonization, SEM/MLM, experiments, visualization.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Access:&lt;/strong&gt; public aggregates + restricted microdata (DTA/DTUA).&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Governance:&lt;/strong&gt; authorship/citation norms, ethics &amp; GDPR templates, annual DOI releases.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/article&gt;</code></pre>
+<div class="callout-body-container callout-body">
+<p>Democracies aim to create conditions for human flourishing, yet democratic discontent is rising. By mapping when systems support or thwart citizens’ needs, we clarify why democracies sometimes enhance mental health—and why, under threat, citizens may prefer autocratic solutions.</p>
 </div>
-<div class="grid cols-3" style="margin-top:16px">
-<pre><code>&lt;div class="card kpi"&gt;&lt;div&gt;
-  &lt;div class="muted small"&gt;Release cadence&lt;/div&gt;
-  &lt;div style="font-size:28px;font-weight:800"&gt;Annual snapshot&lt;/div&gt;
-&lt;/div&gt;&lt;span class="tag"&gt;DOI-versioned&lt;/span&gt;&lt;/div&gt;
-&lt;div class="card kpi"&gt;&lt;div&gt;
-  &lt;div class="muted small"&gt;Access tiers&lt;/div&gt;
-  &lt;div style="font-size:28px;font-weight:800"&gt;Public · Partner&lt;/div&gt;
-&lt;/div&gt;&lt;span class="tag"&gt;GDPR-aligned&lt;/span&gt;&lt;/div&gt;
-&lt;div class="card kpi"&gt;&lt;div&gt;
-  &lt;div class="muted small"&gt;Open science&lt;/div&gt;
-  &lt;div style="font-size:28px;font-weight:800"&gt;Prereg + Code&lt;/div&gt;
-&lt;/div&gt;&lt;span class="tag"&gt;Reproducible&lt;/span&gt;&lt;/div&gt;</code></pre>
+</div>
+</div><div class="column bg-blue" style="width:45%;">
+<p><strong>Scope</strong></p>
+<ul>
+<li><p>Datasets: cross‑national surveys; national panels; experiments; validated short scales.</p></li>
+<li><p>Metadata: codebooks, translations, invariance reports, sampling frames, weights, changelogs.</p></li>
+<li><p>Analytics: preregistered pipelines for harmonization, SEM/MLM, experiments, visualization.</p></li>
+<li><p>Access: public aggregates + restricted microdata (DTA/DTUA).</p></li>
+<li><p>Governance: authorship/citation norms, ethics &amp; GDPR templates, annual DOI releases.</p></li>
+</ul>
+</div>
 </div>
 </section>
-<section id="structure">
-<h3 class="anchored">
-Repository Structure
-</h3>
-<div class="grid cols-2">
-<pre><code>&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Folders &amp; Files&lt;/h4&gt;
-  &lt;pre class="code-box small"&gt;&lt;code&gt;motivation-democracy-hub/</code></pre>
-├─ index.qmd ├─ _quarto.yml ├─ styles.css ├─ docs/ ├─ data/ │ ├─ processed/ │ │ └─ mdhub_v1_country_year.parquet │ └─ metadata/ │ ├─ codebook_v1.csv │ ├─ translations_v1.csv │ └─ instruments/ ├─ scripts/ │ ├─ harmonize.qmd │ ├─ invariance.qmd │ └─ models.qmd ├─ dashboards/ │ └─ explore.qmd ├─ governance/ │ ├─ ACCESS_POLICY.qmd │ ├─ CONTRIBUTING.qmd │ └─ ETHICS_TEMPLATE.qmd └─ assets/
-
-<pre><code>&lt;/div&gt;
-&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Access &amp; Citation&lt;/h4&gt;
-  &lt;p class="small"&gt;Use a dual-track model:&lt;/p&gt;
-  &lt;ul class="list small"&gt;
-    &lt;li&gt;&lt;strong&gt;Public:&lt;/strong&gt; de-identified aggregates, documentation, example figures.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Partner:&lt;/strong&gt; controlled microdata via data use agreements.&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;p class="small"&gt;Cite as:&lt;/p&gt;
-  &lt;div class="code-box small"&gt;&lt;code&gt;Waterschoot, J. (2026). Motivation &amp; Democracy Data Hub (v1.0) [Dataset].</code></pre>
-UGent/COM. DOI: 10.5281/zenodo.xxxxx
+<section id="explore" class="level2">
+<h2 class="anchored" data-anchor-id="explore">Explore</h2>
+</section>
+<section id="documentation" class="level2">
+<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
+<div class="columns" style="display:flex; gap:1em;">
+<div class="column bg-blue" style="width:30%;">
+<p><strong>Codebook</strong></p>
+<p>Variables, scale anchors, construction rules (e.g., ABC composites), and missing data conventions.</p>
+<p><a href="report.qmd" class="btn btn-primary">Open codebook</a></p>
+<p>Blah Blah <span class="citation" data-cites="bion2018 wickham2015">(<a href="#ref-bion2018" role="doc-biblioref">Bion et al., 2018</a>; <a href="#ref-wickham2015" role="doc-biblioref">Wickham, 2015</a>)</span>.</p>
+</div><div class="column bg-blue" style="width:35%;">
+<p><strong>Measurement invariance</strong></p>
+<p>Text about your invariance procedure here.</p>
+</div><div class="column bg-blue" style="width:30%;">
+<p><strong>Analytic models</strong></p>
+<p>Text about analytic models here.</p>
 </div>
-</section></main></main></div>
-
-
-<section id="explore">
-<h3>
-Explore (Demo)
-</h3>
-<div class="grid cols-2">
-<pre><code>&lt;div class="card"&gt;
-  &lt;p class="small muted" style="margin-top:0"&gt;Illustrative scatter of country means (need satisfaction vs. well-being). Replace with real aggregates.&lt;/p&gt;
-
-  &lt;!-- Container built in R below --&gt;
-
-  ::: {.cell}
-  ::: {.cell-output-display}
-  
-  ```{=html}
-  &lt;div id="viz" style="height:320px;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border-radius:14px;border:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden"&gt;&lt;/div&gt;
-  ```
-  
-  :::
-  :::
-
-
-  &lt;p class="small muted"&gt;Legend: grey = not significant; colored = continent categories. Significance thresholds and CIs shown on hover.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Download (placeholders)&lt;/h4&gt;
-  &lt;ul class="list small"&gt;
-    &lt;li&gt;&lt;a class="inline-link" href="#"&gt;Processed parquet (v1)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class="inline-link" href="#"&gt;Codebook (CSV)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class="inline-link" href="#"&gt;Translations (CSV)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class="inline-link" href="#"&gt;Instrument PDFs&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;p class="small muted"&gt;Replace URLs with your GitHub/Dataverse/Zenodo links. For controlled access, link to a form or contact.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
 </div>
 </section>
-<section id="docs">
-<h3>
-Documentation
-</h3>
-<div class="grid cols-3">
-<pre><code>&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Codebook&lt;/h4&gt;
-  &lt;p class="small"&gt;Variables, scale anchors, construction rules (e.g., ABC composites), and missing data conventions.&lt;/p&gt;
-  &lt;a class="btn secondary" href="#"&gt;Open codebook&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Measurement Invariance&lt;/h4&gt;
-  &lt;p class="small"&gt;Configural/metric/scalar plan; alignment when needed; fit indices; item-level diagnostics across countries.&lt;/p&gt;
-  &lt;a class="btn secondary" href="#"&gt;Open invariance plan&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Analytic Models&lt;/h4&gt;
-  &lt;p class="small"&gt;Multilevel models, longitudinal cross-lagged paths, and experimental contrasts; preregistered hypotheses.&lt;/p&gt;
-  &lt;a class="btn secondary" href="#"&gt;Open model specs&lt;/a&gt;
-&lt;/div&gt;</code></pre>
+<section id="governance-ethics" class="level2">
+<h2 class="anchored" data-anchor-id="governance-ethics">Governance &amp; ethics</h2>
+<div class="columns" style="display:flex; gap:1em;">
+<div class="column bg-blue" style="width:50%;">
+<p><strong>Access policy</strong></p>
+<p>Tiered access (Public/Partner). Partner access requires a Data Use Agreement, approval by the steering committee, and compliance with GDPR and local IRB requirements.</p>
+<p>ACCESS_POLICY.html</p>
+</div><div class="column bg-blue" style="width:50%;">
+<p><strong>Contributing</strong></p>
+<p>Intake template, QC pipeline, authorship (CRediT), citation norms, and preregistration requirements for contributed studies.</p>
+<p>CONTRIBUTING.html</p>
 </div>
+</div>
+<p><br></p>
+<div class="columns" style="display:flex; gap:1em;">
+<div class="column bg-blue" style="width:50%;">
+<p><strong>Ethics template</strong></p>
+<p>Boilerplate for local IRB submissions, consent language, and cross‑border data transfer statements.</p>
+<p>ETHICS_TEMPLATE.html</p>
+</div><div class="column bg-blue" style="width:50%;">
+<p><strong>Roadmap</strong></p>
+<p>v1 (inventory &amp; metadata) → v2 (harmonized aggregates) → v3 (MI report + dashboard) → v4 (external contributions).</p>
+<p>⌘ Annual DOI snapshot</p>
+</div>
+</div>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-bion2018" class="csl-entry" role="listitem">
+Bion, R., Chang, R., &amp; Goodman, J. (2018). How r helps airbnb make the most of its data. <em>The American Statistician</em>, <em>72</em>(1), 46–52. <a href="https://doi.org/10.1080/00031305.2017.1392362">https://doi.org/10.1080/00031305.2017.1392362</a>
+</div>
+<div id="ref-wickham2015" class="csl-entry" role="listitem">
+Wickham, H. (2015). <em>R packages</em> (1st ed.). O’Reilly Media, Inc.
+</div>
+</div>
+
+
 </section>
-<section id="governance">
-<h3>
-Governance &amp; Ethics
-</h3>
-<div class="grid cols-2">
-<pre><code>&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Access Policy&lt;/h4&gt;
-  &lt;p class="small"&gt;Tiered access (Public/Partner). Partner access requires a Data Use Agreement, approval by the steering committee, and compliance with GDPR and local IRB requirements.&lt;/p&gt;
-  &lt;a class="btn secondary" href="#"&gt;ACCESS_POLICY.html&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Contributing&lt;/h4&gt;
-  &lt;p class="small"&gt;Intake template, QC pipeline, authorship (CRediT), citation norms, and preregistration requirements for contributed studies.&lt;/p&gt;
-  &lt;a class="btn secondary" href="#"&gt;CONTRIBUTING.html&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Ethics Templates&lt;/h4&gt;
-  &lt;p class="small"&gt;Boilerplate for local IRB submissions, consent language, and cross-border data transfer statements.&lt;/p&gt;
-  &lt;a class="btn secondary" href="#"&gt;ETHICS_TEMPLATE.html&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class="card"&gt;
-  &lt;h4 style="margin-top:0"&gt;Roadmap&lt;/h4&gt;
-  &lt;p class="small"&gt;v1 (inventory &amp; metadata) → v2 (harmonized aggregates) → v3 (MI report + dashboard) → v4 (external contributions).&lt;/p&gt;
-  &lt;span class="pill"&gt;&lt;span class="kbd"&gt;⌘&lt;/span&gt;&lt;span&gt;Annual DOI snapshot&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-</div>
 </section>
 
-<footer>
-<div class="container footer-grid">
-<pre><code>&lt;div&gt;
-  &lt;strong&gt;Motivation &amp; Democracy Data Hub&lt;/strong&gt;
-  &lt;p class="small muted"&gt;An independent research infrastructure led by Joachim Waterschoot (COM-UGent). Built for cumulative, interdisciplinary, and policy-relevant science on democracy and mental well-being.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  &lt;div class="muted small" style="margin-bottom:8px"&gt;Links&lt;/div&gt;
-  &lt;ul class="list small"&gt;
-    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#concept"&gt;Concept&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#explore"&gt;Explore&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#docs"&gt;Docs&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#governance"&gt;Governance&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  &lt;div class="muted small" style="margin-bottom:8px"&gt;Meta&lt;/div&gt;
-  &lt;ul class="list small"&gt;
-    &lt;li&gt;Version: v1.0 (demo)&lt;/li&gt;
-    &lt;li&gt;License: CC-BY-4.0&lt;/li&gt;
-    &lt;li&gt;© 2025 COM-UGent&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-</div>
-</footer>
-<!-- Tiny demo scatter (no libs) -->
-<script>
-(function(){
-  const el = document.getElementById('viz');
-  if(!el) return;
-  const w = el.clientWidth, h = el.clientHeight;
-  const N = 50;
-  const hues = {EU:260, AF:20, AS:180, NA:320, SA:120, OC:210};
-  const keys = Object.keys(hues);
-  const mk = v => Math.max(12, Math.min(v, 308));
-  const wrap = document.createElement('div');
-  wrap.style.position='absolute';wrap.style.inset='12px';
-  wrap.style.borderLeft='1px solid rgba(255,255,255,.1)';
-  wrap.style.borderBottom='1px solid rgba(255,255,255,.1)';
-  el.appendChild(wrap);
-  for(let i=0;i<N;i++){
-    const x = Math.random()* (w-48);
-    const y = Math.random()* (h-48);
-    const cont = keys[i % keys.length];
-    const sig = Math.random()>0.25;
-    const dot = document.createElement('div');
-    dot.title = cont + (sig? ' • significant' : ' • n.s.');
-    dot.style.position='absolute';
-    dot.style.left = mk(x)+'px';
-    dot.style.bottom = mk(y)+'px';
-    dot.style.width= dot.style.height = sig ? '10px':'8px';
-    dot.style.borderRadius='999px';
-    dot.style.background = sig ? `hsl(${hues[cont]} 90% 60% / .95)` : 'rgba(255,255,255,.35)';
-    dot.style.boxShadow='0 2px 8px rgba(0,0,0,.35)';
-    wrap.appendChild(dot);
-  }
-  const mean = document.createElement('div');
-  mean.style.position='absolute';mean.style.left='12px';mean.style.right='12px';mean.style.bottom='50%';
-  mean.style.borderTop='2px solid rgba(250,204,21,.9)';
-  wrap.appendChild(mean);
-  const label = document.createElement('div');
-  label.textContent='Mean well-being';
-  label.style.position='absolute';label.style.right='16px';label.style.bottom='calc(50% + 6px)';
-  label.style.fontSize='12px';label.style.color='rgba(255,255,255,.8)';
-  wrap.appendChild(label);
-})();
-</script>
-
-
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -814,18 +867,18 @@ Governance &amp; Ethics
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© COM-UGent</p>
-</div>   
+      &nbsp;
+    </div>   
     <div class="nav-footer-center">
+<p>© 2025 Joachim Waterschoot</p>
+</div>
+    <div class="nav-footer-right">
       &nbsp;
     </div>
-    <div class="nav-footer-right">
-<p>v0.1 · DOI pending</p>
-</div>
   </div>
 </footer>
 

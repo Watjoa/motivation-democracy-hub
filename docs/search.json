@@ -2,57 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Motivation & Democracy Data Hub",
+    "title": "Toward a Psychology of Democratic Well‑Being",
     "section": "",
-    "text": "&lt;a class=\"brand\" href=\"#top\" aria-label=\"Home\"&gt;\n  &lt;span class=\"logo\" aria-hidden=\"true\"&gt;\n    &lt;svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" role=\"img\" aria-label=\"logo\"&gt;&lt;path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01z\"/&gt;&lt;/svg&gt;\n  &lt;/span&gt;\n  &lt;h1&gt;Motivation & Democracy Data Hub&lt;/h1&gt;\n&lt;/a&gt;\n&lt;nav class=\"menu\" aria-label=\"Primary\"&gt;\n  &lt;a href=\"#about\"&gt;About&lt;/a&gt;\n  &lt;a href=\"#concept\"&gt;Concept&lt;/a&gt;\n  &lt;a href=\"#structure\"&gt;Structure&lt;/a&gt;\n  &lt;a href=\"#explore\"&gt;Explore&lt;/a&gt;\n  &lt;a href=\"#docs\"&gt;Docs&lt;/a&gt;\n  &lt;a href=\"#governance\"&gt;Governance&lt;/a&gt;\n&lt;/nav&gt;\n\n\n\n\n\nToward a Psychology of Democratic Well-Being\n\n\nA curated, living repository that integrates cross-national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well-being and civic engagement. Built for cumulative, open, and policy-relevant science.\n\n\n&lt;a class=\"btn\" href=\"#explore\"&gt;Explore Indicators&lt;/a&gt;\n&lt;a class=\"btn secondary\" href=\"#docs\"&gt;Get the Docs&lt;/a&gt;\n\n\n&lt;a href=\"#concept\"&gt;Concept Note&lt;/a&gt;\n&lt;a href=\"#structure\"&gt;Data & Code&lt;/a&gt;\n&lt;a href=\"#governance\"&gt;Access & Ethics&lt;/a&gt;\n\n\n\n\nConcept Note\n\n\n&lt;article class=\"card\"&gt;\n  &lt;h4 style=\"margin-top:0\"&gt;Purpose&lt;/h4&gt;\n  &lt;p&gt;The Hub curates datasets, metadata, and reproducible code connecting democratic quality, psychological need dynamics, well-being, and civic attitudes. It offers public aggregates for transparency and governed access for partner microdata.&lt;/p&gt;\n  &lt;div class=\"callout small\" role=\"note\" aria-label=\"Rationale\"&gt;\n    &lt;strong&gt;Rationale.&lt;/strong&gt; Democracies aim to create conditions for human flourishing, yet democratic discontent is rising. By mapping when systems support or thwart citizens’ needs, we clarify why democracies sometimes enhance mental health—and why, under threat, citizens may prefer autocratic solutions.\n  &lt;/div&gt;\n&lt;/article&gt;\n&lt;article class=\"card\"&gt;\n  &lt;h4 style=\"margin-top:0\"&gt;Scope&lt;/h4&gt;\n  &lt;ul class=\"list small\"&gt;\n    &lt;li&gt;&lt;strong&gt;Datasets:&lt;/strong&gt; cross-national surveys; national panels; experiments; validated short scales.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Metadata:&lt;/strong&gt; codebooks, translations, invariance reports, sampling frames, weights, changelogs.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Analytics:&lt;/strong&gt; preregistered pipelines for harmonization, SEM/MLM, experiments, visualization.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Access:&lt;/strong&gt; public aggregates + restricted microdata (DTA/DTUA).&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Governance:&lt;/strong&gt; authorship/citation norms, ethics & GDPR templates, annual DOI releases.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;\n\n\n&lt;div class=\"card kpi\"&gt;&lt;div&gt;\n  &lt;div class=\"muted small\"&gt;Release cadence&lt;/div&gt;\n  &lt;div style=\"font-size:28px;font-weight:800\"&gt;Annual snapshot&lt;/div&gt;\n&lt;/div&gt;&lt;span class=\"tag\"&gt;DOI-versioned&lt;/span&gt;&lt;/div&gt;\n&lt;div class=\"card kpi\"&gt;&lt;div&gt;\n  &lt;div class=\"muted small\"&gt;Access tiers&lt;/div&gt;\n  &lt;div style=\"font-size:28px;font-weight:800\"&gt;Public · Partner&lt;/div&gt;\n&lt;/div&gt;&lt;span class=\"tag\"&gt;GDPR-aligned&lt;/span&gt;&lt;/div&gt;\n&lt;div class=\"card kpi\"&gt;&lt;div&gt;\n  &lt;div class=\"muted small\"&gt;Open science&lt;/div&gt;\n  &lt;div style=\"font-size:28px;font-weight:800\"&gt;Prereg + Code&lt;/div&gt;\n&lt;/div&gt;&lt;span class=\"tag\"&gt;Reproducible&lt;/span&gt;&lt;/div&gt;\n\n\n\n\nRepository Structure\n\n\n&lt;div class=\"card\"&gt;\n  &lt;h4 style=\"margin-top:0\"&gt;Folders & Files&lt;/h4&gt;\n  &lt;pre class=\"code-box small\"&gt;&lt;code&gt;motivation-democracy-hub/\n├─ index.qmd ├─ _quarto.yml ├─ styles.css ├─ docs/ ├─ data/ │ ├─ processed/ │ │ └─ mdhub_v1_country_year.parquet │ └─ metadata/ │ ├─ codebook_v1.csv │ ├─ translations_v1.csv │ └─ instruments/ ├─ scripts/ │ ├─ harmonize.qmd │ ├─ invariance.qmd │ └─ models.qmd ├─ dashboards/ │ └─ explore.qmd ├─ governance/ │ ├─ ACCESS_POLICY.qmd │ ├─ CONTRIBUTING.qmd │ └─ ETHICS_TEMPLATE.qmd └─ assets/\n\n&lt;/div&gt;\n&lt;div class=\"card\"&gt;\n  &lt;h4 style=\"margin-top:0\"&gt;Access & Citation&lt;/h4&gt;\n  &lt;p class=\"small\"&gt;Use a dual-track model:&lt;/p&gt;\n  &lt;ul class=\"list small\"&gt;\n    &lt;li&gt;&lt;strong&gt;Public:&lt;/strong&gt; de-identified aggregates, documentation, example figures.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Partner:&lt;/strong&gt; controlled microdata via data use agreements.&lt;/li&gt;\n  &lt;/ul&gt;\n  &lt;p class=\"small\"&gt;Cite as:&lt;/p&gt;\n  &lt;div class=\"code-box small\"&gt;&lt;code&gt;Waterschoot, J. (2026). Motivation & Democracy Data Hub (v1.0) [Dataset].\nUGent/COM. DOI: 10.5281/zenodo.xxxxx"
+    "text": "Purpose\nThe Hub curates datasets, metadata, and reproducible code connecting democratic quality, psychological need dynamics, well‑being, and civic attitudes. It offers public aggregates for transparency and governed access for partner microdata.\n\n\n\n\n\n\nRationale\n\n\n\nDemocracies aim to create conditions for human flourishing, yet democratic discontent is rising. By mapping when systems support or thwart citizens’ needs, we clarify why democracies sometimes enhance mental health—and why, under threat, citizens may prefer autocratic solutions.\n\n\n\nScope\n\nDatasets: cross‑national surveys; national panels; experiments; validated short scales.\nMetadata: codebooks, translations, invariance reports, sampling frames, weights, changelogs.\nAnalytics: preregistered pipelines for harmonization, SEM/MLM, experiments, visualization.\nAccess: public aggregates + restricted microdata (DTA/DTUA).\nGovernance: authorship/citation norms, ethics & GDPR templates, annual DOI releases."
   },
   {
-    "objectID": "index.html#getting-started-r",
-    "href": "index.html#getting-started-r",
-    "title": "Motivation & Democracy Data Hub",
-    "section": "Getting started (R)",
-    "text": "Getting started (R)\n\n# install.packages(c(\"arrow\",\"dplyr\"))\n# df &lt;- arrow::read_parquet(\"data/processed/mdhub_v1_country_year.parquet\")\n# dplyr::glimpse(df)"
-  },
-  {
-    "objectID": "index.html#governance-access",
-    "href": "index.html#governance-access",
-    "title": "Motivation & Democracy Data Hub",
-    "section": "Governance & access",
-    "text": "Governance & access\nSee the Governance section for ethics, GDPR, and data-access tiers."
-  },
-  {
-    "objectID": "governance/CONTRIBUTING.html",
-    "href": "governance/CONTRIBUTING.html",
-    "title": "Contributing Guidelines (v0.1)",
+    "objectID": "index.html#concept-note",
+    "href": "index.html#concept-note",
+    "title": "Toward a Psychology of Democratic Well‑Being",
     "section": "",
-    "text": "Contributing Guidelines (v0.1)\nIntake checklist - [ ] Ethics approval ID and consent language - [ ] Codebook (CSV) with variable names, labels, scale bounds - [ ] Translation tables (if cross-national) - [ ] Provenance metadata (who, when, where) - [ ] Quality checks (missingness, attention checks)\nReview & Authorship - Submissions are reviewed for harmonization, quality, and ethics. - Authorship follows CRediT. Data providers are offered co-authorship when substantive intellectual contributions are made."
+    "text": "Purpose\nThe Hub curates datasets, metadata, and reproducible code connecting democratic quality, psychological need dynamics, well‑being, and civic attitudes. It offers public aggregates for transparency and governed access for partner microdata.\n\n\n\n\n\n\nRationale\n\n\n\nDemocracies aim to create conditions for human flourishing, yet democratic discontent is rising. By mapping when systems support or thwart citizens’ needs, we clarify why democracies sometimes enhance mental health—and why, under threat, citizens may prefer autocratic solutions.\n\n\n\nScope\n\nDatasets: cross‑national surveys; national panels; experiments; validated short scales.\nMetadata: codebooks, translations, invariance reports, sampling frames, weights, changelogs.\nAnalytics: preregistered pipelines for harmonization, SEM/MLM, experiments, visualization.\nAccess: public aggregates + restricted microdata (DTA/DTUA).\nGovernance: authorship/citation norms, ethics & GDPR templates, annual DOI releases."
   },
   {
-    "objectID": "governance/CODE_OF_CONDUCT.html",
-    "href": "governance/CODE_OF_CONDUCT.html",
-    "title": "Code of Conduct",
-    "section": "",
-    "text": "Code of Conduct\nWe strive for an open, respectful, and constructive community. Harassment and discrimination are not tolerated."
+    "objectID": "index.html#explore",
+    "href": "index.html#explore",
+    "title": "Toward a Psychology of Democratic Well‑Being",
+    "section": "Explore",
+    "text": "Explore"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "objectID": "index.html#documentation",
+    "href": "index.html#documentation",
+    "title": "Toward a Psychology of Democratic Well‑Being",
+    "section": "Documentation",
+    "text": "Documentation\n\n\nCodebook\nVariables, scale anchors, construction rules (e.g., ABC composites), and missing data conventions.\nOpen codebook\nBlah Blah (Bion et al., 2018; Wickham, 2015).\n\nMeasurement invariance\nText about your invariance procedure here.\n\nAnalytic models\nText about analytic models here."
   },
   {
-    "objectID": "dashboards/explore.html",
-    "href": "dashboards/explore.html",
-    "title": "Explore",
-    "section": "",
-    "text": "Below are exploratory summaries (aggregated). Unit-level data access requires a Data Transfer Agreement (DTA).\n\n# library(ggplot2); library(dplyr); library(ggrepel)\n# Example (replace with real data):\n# df &lt;- data.frame(country=c(\"BE\",\"NL\",\"FI\"), need_sat=c(5.2,5.5,5.8), wellbeing=c(6.5,6.7,7.0))\n# ggplot(df, aes(need_sat, wellbeing, label = country)) + geom_point() #+ ggrepel::geom_text_repel()"
-  },
-  {
-    "objectID": "governance/ACCESS_POLICY.html",
-    "href": "governance/ACCESS_POLICY.html",
-    "title": "Data Access Policy (v0.1)",
-    "section": "",
-    "text": "Data Access Policy (v0.1)\nTiers 1. Public aggregates (summary tables, figures).\n2. Partner microdata (requires DTA/DTUA, ethics approval, and project alignment).\n3. Embargoed (ongoing studies; internal only).\nUsage & Citation\n- Cite the hub with its DOI and version (see CITATION.cff).\n- Co-authorship follows CRediT roles and the project’s contribution guidelines.\nPrivacy & Ethics\n- GDPR-compliant pipelines; unit-level identifiers removed or encrypted.\n- Each dataset must include an ethics statement and approved protocol ID."
+    "objectID": "index.html#governance-ethics",
+    "href": "index.html#governance-ethics",
+    "title": "Toward a Psychology of Democratic Well‑Being",
+    "section": "Governance & ethics",
+    "text": "Governance & ethics\n\n\nAccess policy\nTiered access (Public/Partner). Partner access requires a Data Use Agreement, approval by the steering committee, and compliance with GDPR and local IRB requirements.\nACCESS_POLICY.html\n\nContributing\nIntake template, QC pipeline, authorship (CRediT), citation norms, and preregistration requirements for contributed studies.\nCONTRIBUTING.html\n\n\n\n\n\nEthics template\nBoilerplate for local IRB submissions, consent language, and cross‑border data transfer statements.\nETHICS_TEMPLATE.html\n\nRoadmap\nv1 (inventory & metadata) → v2 (harmonized aggregates) → v3 (MI report + dashboard) → v4 (external contributions).\n⌘ Annual DOI snapshot\n\n\n\nReferences\n\n\nBion, R., Chang, R., & Goodman, J. (2018). How r helps airbnb make the most of its data. The American Statistician, 72(1), 46–52. https://doi.org/10.1080/00031305.2017.1392362\n\n\nWickham, H. (2015). R packages (1st ed.). O’Reilly Media, Inc."
   }
 ]
