@@ -25,7 +25,7 @@
     "href": "index.html#documentation",
     "title": "Toward a Psychology of Democratic Well‑Being",
     "section": "Documentation",
-    "text": "Documentation\n\n\nCodebook\nVariables, scale anchors, construction rules (e.g., ABC composites), and missing data conventions.\nOpen codebook\nBlah Blah (Bion et al., 2018; Wickham, 2015).\n\nMeasurement invariance\nText about your invariance procedure here.\n\nAnalytic models\nText about analytic models here."
+    "text": "Documentation\n\n\nCodebook\nVariables, scale anchors, construction rules (e.g., ABC composites), and missing data conventions.\nOpen codebook\n\n\n\n\n\n\n\n\n\n\nBlah Blah (Bion et al., 2018; Wickham, 2015).\n\nMeasurement invariance\nText about your invariance procedure here.\n\nAnalytic models\nText about analytic models here."
   },
   {
     "objectID": "index.html#governance-ethics",
@@ -33,5 +33,40 @@
     "title": "Toward a Psychology of Democratic Well‑Being",
     "section": "Governance & ethics",
     "text": "Governance & ethics\n\n\nAccess policy\nTiered access (Public/Partner). Partner access requires a Data Use Agreement, approval by the steering committee, and compliance with GDPR and local IRB requirements.\nACCESS_POLICY.html\n\nContributing\nIntake template, QC pipeline, authorship (CRediT), citation norms, and preregistration requirements for contributed studies.\nCONTRIBUTING.html\n\n\n\n\n\nEthics template\nBoilerplate for local IRB submissions, consent language, and cross‑border data transfer statements.\nETHICS_TEMPLATE.html\n\nRoadmap\nv1 (inventory & metadata) → v2 (harmonized aggregates) → v3 (MI report + dashboard) → v4 (external contributions).\n⌘ Annual DOI snapshot\n\n\n\nReferences\n\n\nBion, R., Chang, R., & Goodman, J. (2018). How r helps airbnb make the most of its data. The American Statistician, 72(1), 46–52. https://doi.org/10.1080/00031305.2017.1392362\n\n\nWickham, H. (2015). R packages (1st ed.). O’Reilly Media, Inc."
+  },
+  {
+    "objectID": "governance/CONTRIBUTING.html",
+    "href": "governance/CONTRIBUTING.html",
+    "title": "Contributing Guidelines (v0.1)",
+    "section": "",
+    "text": "Contributing Guidelines (v0.1)\nIntake checklist - [ ] Ethics approval ID and consent language - [ ] Codebook (CSV) with variable names, labels, scale bounds - [ ] Translation tables (if cross-national) - [ ] Provenance metadata (who, when, where) - [ ] Quality checks (missingness, attention checks)\nReview & Authorship - Submissions are reviewed for harmonization, quality, and ethics. - Authorship follows CRediT. Data providers are offered co-authorship when substantive intellectual contributions are made."
+  },
+  {
+    "objectID": "governance/CODE_OF_CONDUCT.html",
+    "href": "governance/CODE_OF_CONDUCT.html",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "Code of Conduct\nWe strive for an open, respectful, and constructive community. Harassment and discrimination are not tolerated."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "dashboards/explore.html",
+    "href": "dashboards/explore.html",
+    "title": "Explore",
+    "section": "",
+    "text": "Below are exploratory summaries (aggregated). Unit-level data access requires a Data Transfer Agreement (DTA).\n\n# library(ggplot2); library(dplyr); library(ggrepel)\n# Example (replace with real data):\n# df &lt;- data.frame(country=c(\"BE\",\"NL\",\"FI\"), need_sat=c(5.2,5.5,5.8), wellbeing=c(6.5,6.7,7.0))\n# ggplot(df, aes(need_sat, wellbeing, label = country)) + geom_point() #+ ggrepel::geom_text_repel()"
+  },
+  {
+    "objectID": "governance/ACCESS_POLICY.html",
+    "href": "governance/ACCESS_POLICY.html",
+    "title": "Data Access Policy (v0.1)",
+    "section": "",
+    "text": "Data Access Policy (v0.1)\nTiers 1. Public aggregates (summary tables, figures).\n2. Partner microdata (requires DTA/DTUA, ethics approval, and project alignment).\n3. Embargoed (ongoing studies; internal only).\nUsage & Citation\n- Cite the hub with its DOI and version (see CITATION.cff).\n- Co-authorship follows CRediT roles and the project’s contribution guidelines.\nPrivacy & Ethics\n- GDPR-compliant pipelines; unit-level identifiers removed or encrypted.\n- Each dataset must include an ethics statement and approved protocol ID."
   }
 ]

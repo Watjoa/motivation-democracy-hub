@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Motivation & Democracy Data Hub"
-  image: "datahublogo.png"
+ #image: "datahublogo.png"
   # favicon: "favicon.png"
   # google-analytics: "G-FV9Z7SDZ0M"
  # open-graph: true
@@ -21,6 +21,20 @@ website:
     logo: "datahublogo.png"
     logo-alt: "logo."
     collapse-below: lg
+    right:
+      - icon: github
+        href: https://github.com/Watjoa
+        aria-label: Quarto GitHub
+    left:
+      - text: "Note"
+        href: index.qmd#concept-note
+      - text: "Explore"
+        href: index.qmd#explore
+      - text: "Documentation"
+        href: index.qmd#documentation
+      - text: "Governance & ethics"
+        href: index.qmd#governance-ethics
+    
 
 bibliography: references.bib
 

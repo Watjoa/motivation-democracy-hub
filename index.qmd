@@ -1,7 +1,7 @@
 ---
 title: "Toward a Psychology of Democratic Well‑Being"
 subtitle: "A curated, living repository that integrates cross‑national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well‑being and civic engagement. Built for cumulative, open, and policy‑relevant science."
-toc: true
+toc: false
 bibliography: references.bib
 csl: apa.csl
 ---
@@ -19,7 +19,7 @@ csl: apa.csl
 ## Concept note
 
 ::: {.columns style="display:flex; gap:1em;"}
-::: {.column width="55%" .bg-blue}
+::: {.column width="52%" .bg-blue}
 **Purpose**
 
 The Hub curates datasets, metadata, and reproducible code connecting democratic quality, psychological need dynamics, well‑being, and civic attitudes. It offers public aggregates for transparency and governed access for partner microdata.
@@ -28,7 +28,7 @@ The Hub curates datasets, metadata, and reproducible code connecting democratic 
 Democracies aim to create conditions for human flourishing, yet democratic discontent is rising. By mapping when systems support or thwart citizens’ needs, we clarify why democracies sometimes enhance mental health—and why, under threat, citizens may prefer autocratic solutions.
 :::
 :::
-::: {.column width="45%" .bg-blue}
+::: {.column width="48%" .bg-blue}
 **Scope**
 
 * Datasets: cross‑national surveys; national panels; experiments; validated short scales.
@@ -55,7 +55,18 @@ Democracies aim to create conditions for human flourishing, yet democratic disco
 
 Variables, scale anchors, construction rules (e.g., ABC composites), and missing data conventions.
 
-<a href="report.qmd" class="btn btn-primary">Open codebook</a>
+<a href="report.qmd" class="btn btn-secondary">Open codebook</a>
+
+<!-- 🪄 You can adjust the color with other Bootstrap classes: -->
+<!-- btn-primary → blue -->
+<!-- btn-secondary → grey -->
+<!-- btn-success → green -->
+<!-- btn-danger → red -->
+<!-- btn-info → teal -->
+<!-- btn-warning → yellow -->
+<!-- and the size: -->
+<!-- btn-sm → small -->
+<!-- btn-lg → large -->
 
 Blah Blah [@bion2018; @wickham2015].
 :::
@@ -121,4 +132,3 @@ Annual DOI snapshot
 
 ::: {#refs}
 :::
-
