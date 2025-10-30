@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Cross-national, longitudinal, and experimental data on democracy, psychological needs, and well-being.">
+
+<title>Motivation &amp; Democracy Data Hub</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Motivation &amp; Democracy Data Hub</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./dashboards/explore.html"> 
+<span class="menu-text">Explore</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-docs" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Docs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-docs">    
+        <li>
+    <a class="dropdown-item" href="./data/metadata/codebook_v1.csv">
+ <span class="dropdown-text">Codebook</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./governance/ACCESS_POLICY.html">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./governance/CONTRIBUTING.html">
+ <span class="dropdown-text">Contribute</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Motivation &amp; Democracy Data Hub</h1>
+</div>
+
+<div>
+  <div class="description">
+    Cross-national, longitudinal, and experimental data on democracy, psychological needs, and well-being.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<header>
+<div class="container nav">
+<pre><code>&lt;a class="brand" href="#top" aria-label="Home"&gt;
+  &lt;span class="logo" aria-hidden="true"&gt;
+    &lt;svg viewBox="0 0 24 24" width="20" height="20" role="img" aria-label="logo"&gt;&lt;path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/&gt;&lt;/svg&gt;
+  &lt;/span&gt;
+  &lt;h1&gt;Motivation &amp; Democracy Data Hub&lt;/h1&gt;
+&lt;/a&gt;
+&lt;nav class="menu" aria-label="Primary"&gt;
+  &lt;a href="#about"&gt;About&lt;/a&gt;
+  &lt;a href="#concept"&gt;Concept&lt;/a&gt;
+  &lt;a href="#structure"&gt;Structure&lt;/a&gt;
+  &lt;a href="#explore"&gt;Explore&lt;/a&gt;
+  &lt;a href="#docs"&gt;Docs&lt;/a&gt;
+  &lt;a href="#governance"&gt;Governance&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+</div>
+</header>
+<main id="top" class="container">
+<section class="hero" id="about">
+<h2 class="anchored">
+Toward a Psychology of Democratic Well-Being
+</h2>
+<p class="muted">
+A curated, living repository that integrates cross-national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well-being and civic engagement. Built for cumulative, open, and policy-relevant science.
+</p>
+<div class="cta-row">
+<pre><code>&lt;a class="btn" href="#explore"&gt;Explore Indicators&lt;/a&gt;
+&lt;a class="btn secondary" href="#docs"&gt;Get the Docs&lt;/a&gt;</code></pre>
+</div>
+<div class="toc">
+<pre><code>&lt;a href="#concept"&gt;Concept Note&lt;/a&gt;
+&lt;a href="#structure"&gt;Data &amp; Code&lt;/a&gt;
+&lt;a href="#governance"&gt;Access &amp; Ethics&lt;/a&gt;</code></pre>
+</div>
+</section>
+<section id="concept">
+<h3 class="anchored">
+Concept Note
+</h3>
+<div class="grid cols-2">
+<pre><code>&lt;article class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Purpose&lt;/h4&gt;
+  &lt;p&gt;The Hub curates datasets, metadata, and reproducible code connecting democratic quality, psychological need dynamics, well-being, and civic attitudes. It offers public aggregates for transparency and governed access for partner microdata.&lt;/p&gt;
+  &lt;div class="callout small" role="note" aria-label="Rationale"&gt;
+    &lt;strong&gt;Rationale.&lt;/strong&gt; Democracies aim to create conditions for human flourishing, yet democratic discontent is rising. By mapping when systems support or thwart citizens’ needs, we clarify why democracies sometimes enhance mental health—and why, under threat, citizens may prefer autocratic solutions.
+  &lt;/div&gt;
+&lt;/article&gt;
+&lt;article class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Scope&lt;/h4&gt;
+  &lt;ul class="list small"&gt;
+    &lt;li&gt;&lt;strong&gt;Datasets:&lt;/strong&gt; cross-national surveys; national panels; experiments; validated short scales.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Metadata:&lt;/strong&gt; codebooks, translations, invariance reports, sampling frames, weights, changelogs.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Analytics:&lt;/strong&gt; preregistered pipelines for harmonization, SEM/MLM, experiments, visualization.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Access:&lt;/strong&gt; public aggregates + restricted microdata (DTA/DTUA).&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Governance:&lt;/strong&gt; authorship/citation norms, ethics &amp; GDPR templates, annual DOI releases.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/article&gt;</code></pre>
+</div>
+<div class="grid cols-3" style="margin-top:16px">
+<pre><code>&lt;div class="card kpi"&gt;&lt;div&gt;
+  &lt;div class="muted small"&gt;Release cadence&lt;/div&gt;
+  &lt;div style="font-size:28px;font-weight:800"&gt;Annual snapshot&lt;/div&gt;
+&lt;/div&gt;&lt;span class="tag"&gt;DOI-versioned&lt;/span&gt;&lt;/div&gt;
+&lt;div class="card kpi"&gt;&lt;div&gt;
+  &lt;div class="muted small"&gt;Access tiers&lt;/div&gt;
+  &lt;div style="font-size:28px;font-weight:800"&gt;Public · Partner&lt;/div&gt;
+&lt;/div&gt;&lt;span class="tag"&gt;GDPR-aligned&lt;/span&gt;&lt;/div&gt;
+&lt;div class="card kpi"&gt;&lt;div&gt;
+  &lt;div class="muted small"&gt;Open science&lt;/div&gt;
+  &lt;div style="font-size:28px;font-weight:800"&gt;Prereg + Code&lt;/div&gt;
+&lt;/div&gt;&lt;span class="tag"&gt;Reproducible&lt;/span&gt;&lt;/div&gt;</code></pre>
+</div>
+</section>
+<section id="structure">
+<h3 class="anchored">
+Repository Structure
+</h3>
+<div class="grid cols-2">
+<pre><code>&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Folders &amp; Files&lt;/h4&gt;
+  &lt;pre class="code-box small"&gt;&lt;code&gt;motivation-democracy-hub/</code></pre>
+├─ index.qmd ├─ _quarto.yml ├─ styles.css ├─ docs/ ├─ data/ │ ├─ processed/ │ │ └─ mdhub_v1_country_year.parquet │ └─ metadata/ │ ├─ codebook_v1.csv │ ├─ translations_v1.csv │ └─ instruments/ ├─ scripts/ │ ├─ harmonize.qmd │ ├─ invariance.qmd │ └─ models.qmd ├─ dashboards/ │ └─ explore.qmd ├─ governance/ │ ├─ ACCESS_POLICY.qmd │ ├─ CONTRIBUTING.qmd │ └─ ETHICS_TEMPLATE.qmd └─ assets/
+
+<pre><code>&lt;/div&gt;
+&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Access &amp; Citation&lt;/h4&gt;
+  &lt;p class="small"&gt;Use a dual-track model:&lt;/p&gt;
+  &lt;ul class="list small"&gt;
+    &lt;li&gt;&lt;strong&gt;Public:&lt;/strong&gt; de-identified aggregates, documentation, example figures.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Partner:&lt;/strong&gt; controlled microdata via data use agreements.&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class="small"&gt;Cite as:&lt;/p&gt;
+  &lt;div class="code-box small"&gt;&lt;code&gt;Waterschoot, J. (2026). Motivation &amp; Democracy Data Hub (v1.0) [Dataset].</code></pre>
+UGent/COM. DOI: 10.5281/zenodo.xxxxx
+</div>
+</section></main></main></div>
+
+
+<section id="explore">
+<h3>
+Explore (Demo)
+</h3>
+<div class="grid cols-2">
+<pre><code>&lt;div class="card"&gt;
+  &lt;p class="small muted" style="margin-top:0"&gt;Illustrative scatter of country means (need satisfaction vs. well-being). Replace with real aggregates.&lt;/p&gt;
+
+  &lt;!-- Container built in R below --&gt;
+
+  ::: {.cell}
+  ::: {.cell-output-display}
+  
+  ```{=html}
+  &lt;div id="viz" style="height:320px;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border-radius:14px;border:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden"&gt;&lt;/div&gt;
+  ```
+  
+  :::
+  :::
+
+
+  &lt;p class="small muted"&gt;Legend: grey = not significant; colored = continent categories. Significance thresholds and CIs shown on hover.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Download (placeholders)&lt;/h4&gt;
+  &lt;ul class="list small"&gt;
+    &lt;li&gt;&lt;a class="inline-link" href="#"&gt;Processed parquet (v1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="inline-link" href="#"&gt;Codebook (CSV)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="inline-link" href="#"&gt;Translations (CSV)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="inline-link" href="#"&gt;Instrument PDFs&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class="small muted"&gt;Replace URLs with your GitHub/Dataverse/Zenodo links. For controlled access, link to a form or contact.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+<section id="docs">
+<h3>
+Documentation
+</h3>
+<div class="grid cols-3">
+<pre><code>&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Codebook&lt;/h4&gt;
+  &lt;p class="small"&gt;Variables, scale anchors, construction rules (e.g., ABC composites), and missing data conventions.&lt;/p&gt;
+  &lt;a class="btn secondary" href="#"&gt;Open codebook&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Measurement Invariance&lt;/h4&gt;
+  &lt;p class="small"&gt;Configural/metric/scalar plan; alignment when needed; fit indices; item-level diagnostics across countries.&lt;/p&gt;
+  &lt;a class="btn secondary" href="#"&gt;Open invariance plan&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Analytic Models&lt;/h4&gt;
+  &lt;p class="small"&gt;Multilevel models, longitudinal cross-lagged paths, and experimental contrasts; preregistered hypotheses.&lt;/p&gt;
+  &lt;a class="btn secondary" href="#"&gt;Open model specs&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+<section id="governance">
+<h3>
+Governance &amp; Ethics
+</h3>
+<div class="grid cols-2">
+<pre><code>&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Access Policy&lt;/h4&gt;
+  &lt;p class="small"&gt;Tiered access (Public/Partner). Partner access requires a Data Use Agreement, approval by the steering committee, and compliance with GDPR and local IRB requirements.&lt;/p&gt;
+  &lt;a class="btn secondary" href="#"&gt;ACCESS_POLICY.html&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Contributing&lt;/h4&gt;
+  &lt;p class="small"&gt;Intake template, QC pipeline, authorship (CRediT), citation norms, and preregistration requirements for contributed studies.&lt;/p&gt;
+  &lt;a class="btn secondary" href="#"&gt;CONTRIBUTING.html&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Ethics Templates&lt;/h4&gt;
+  &lt;p class="small"&gt;Boilerplate for local IRB submissions, consent language, and cross-border data transfer statements.&lt;/p&gt;
+  &lt;a class="btn secondary" href="#"&gt;ETHICS_TEMPLATE.html&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="card"&gt;
+  &lt;h4 style="margin-top:0"&gt;Roadmap&lt;/h4&gt;
+  &lt;p class="small"&gt;v1 (inventory &amp; metadata) → v2 (harmonized aggregates) → v3 (MI report + dashboard) → v4 (external contributions).&lt;/p&gt;
+  &lt;span class="pill"&gt;&lt;span class="kbd"&gt;⌘&lt;/span&gt;&lt;span&gt;Annual DOI snapshot&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<footer>
+<div class="container footer-grid">
+<pre><code>&lt;div&gt;
+  &lt;strong&gt;Motivation &amp; Democracy Data Hub&lt;/strong&gt;
+  &lt;p class="small muted"&gt;An independent research infrastructure led by Joachim Waterschoot (COM-UGent). Built for cumulative, interdisciplinary, and policy-relevant science on democracy and mental well-being.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div class="muted small" style="margin-bottom:8px"&gt;Links&lt;/div&gt;
+  &lt;ul class="list small"&gt;
+    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#concept"&gt;Concept&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#explore"&gt;Explore&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#docs"&gt;Docs&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#governance"&gt;Governance&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div class="muted small" style="margin-bottom:8px"&gt;Meta&lt;/div&gt;
+  &lt;ul class="list small"&gt;
+    &lt;li&gt;Version: v1.0 (demo)&lt;/li&gt;
+    &lt;li&gt;License: CC-BY-4.0&lt;/li&gt;
+    &lt;li&gt;© 2025 COM-UGent&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</footer>
+<!-- Tiny demo scatter (no libs) -->
+<script>
+(function(){
+  const el = document.getElementById('viz');
+  if(!el) return;
+  const w = el.clientWidth, h = el.clientHeight;
+  const N = 50;
+  const hues = {EU:260, AF:20, AS:180, NA:320, SA:120, OC:210};
+  const keys = Object.keys(hues);
+  const mk = v => Math.max(12, Math.min(v, 308));
+  const wrap = document.createElement('div');
+  wrap.style.position='absolute';wrap.style.inset='12px';
+  wrap.style.borderLeft='1px solid rgba(255,255,255,.1)';
+  wrap.style.borderBottom='1px solid rgba(255,255,255,.1)';
+  el.appendChild(wrap);
+  for(let i=0;i<N;i++){
+    const x = Math.random()* (w-48);
+    const y = Math.random()* (h-48);
+    const cont = keys[i % keys.length];
+    const sig = Math.random()>0.25;
+    const dot = document.createElement('div');
+    dot.title = cont + (sig? ' • significant' : ' • n.s.');
+    dot.style.position='absolute';
+    dot.style.left = mk(x)+'px';
+    dot.style.bottom = mk(y)+'px';
+    dot.style.width= dot.style.height = sig ? '10px':'8px';
+    dot.style.borderRadius='999px';
+    dot.style.background = sig ? `hsl(${hues[cont]} 90% 60% / .95)` : 'rgba(255,255,255,.35)';
+    dot.style.boxShadow='0 2px 8px rgba(0,0,0,.35)';
+    wrap.appendChild(dot);
+  }
+  const mean = document.createElement('div');
+  mean.style.position='absolute';mean.style.left='12px';mean.style.right='12px';mean.style.bottom='50%';
+  mean.style.borderTop='2px solid rgba(250,204,21,.9)';
+  wrap.appendChild(mean);
+  const label = document.createElement('div');
+  label.textContent='Mean well-being';
+  label.style.position='absolute';label.style.right='16px';label.style.bottom='calc(50% + 6px)';
+  label.style.fontSize='12px';label.style.color='rgba(255,255,255,.8)';
+  wrap.appendChild(label);
+})();
+</script>
+
+
+
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+ <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© COM-UGent</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>v0.1 · DOI pending</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

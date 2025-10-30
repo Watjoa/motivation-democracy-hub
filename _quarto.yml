@@ -1,0 +1,53 @@
+project:
+  type: website
+
+website:
+  title: "Motivation & Democracy Data Hub"
+  image: "datahublogo.png"
+  # favicon: "favicon.png"
+  # google-analytics: "G-FV9Z7SDZ0M"
+ # open-graph: true
+  repo-actions: [edit, issue]
+  twitter-card: true
+  #site-url: https://quarto.org
+  sidebar:
+    search: true
+    # style: "docked"
+  page-footer:
+    center: "© 2025 Joachim Waterschoot"
+  navbar:
+    background: light
+    logo: "datahublogo.png"
+    logo-alt: "logo."
+    collapse-below: lg
+
+bibliography: references.bib
+
+format:
+  html:
+    respect-user-color-scheme: true
+    toc: true
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    css: styles.css
+    # include-in-header:
+    #   - text: |
+    #       <script src="https://cdn.jsdelivr.net/gh/posit-dev/supported-by-posit/js/badge.min.js"
+    #         data-light-bg="#E8EDF2"
+    #         data-light-text="#404041"
+    #         data-light-lt="#ee6331"
+    #         data-light-gt="#447099"
+    #         data-dark-bg="#333333"
+    #         data-dark-lt="#ffffff"
+    #         data-dark-gt="#ffffff"></script>
+    # include-after-body: js.html
+    grid:
+      sidebar-width: 150px
+      body-width: 1100px
+      margin-width: 200px
+    # smooth-scroll: true
+    # lang: en
+    # page-layout: full

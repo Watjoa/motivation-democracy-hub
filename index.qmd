@@ -1,0 +1,124 @@
+---
+title: "Toward a Psychology of Democratic Well‑Being"
+subtitle: "A curated, living repository that integrates cross‑national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well‑being and civic engagement. Built for cumulative, open, and policy‑relevant science."
+toc: true
+bibliography: references.bib
+csl: apa.csl
+---
+
+<!-- ::: {.columns style="display:flex; gap:1em;"} -->
+<!-- ::: {.column width="35%"} -->
+<!-- ![](datahublogo.png) -->
+
+<!-- ::: -->
+<!-- ::: {.column width="65%"} -->
+
+<!-- ::: -->
+<!-- ::: -->
+
+## Concept note
+
+::: {.columns style="display:flex; gap:1em;"}
+::: {.column width="55%" .bg-blue}
+**Purpose**
+
+The Hub curates datasets, metadata, and reproducible code connecting democratic quality, psychological need dynamics, well‑being, and civic attitudes. It offers public aggregates for transparency and governed access for partner microdata.
+
+:::{.callout-note title="Rationale"}
+Democracies aim to create conditions for human flourishing, yet democratic discontent is rising. By mapping when systems support or thwart citizens’ needs, we clarify why democracies sometimes enhance mental health—and why, under threat, citizens may prefer autocratic solutions.
+:::
+:::
+::: {.column width="45%" .bg-blue}
+**Scope**
+
+* Datasets: cross‑national surveys; national panels; experiments; validated short scales.
+
+* Metadata: codebooks, translations, invariance reports, sampling frames, weights, changelogs.
+
+* Analytics: preregistered pipelines for harmonization, SEM/MLM, experiments, visualization.
+
+* Access: public aggregates + restricted microdata (DTA/DTUA).
+
+* Governance: authorship/citation norms, ethics & GDPR templates, annual DOI releases.
+
+:::
+:::
+
+## Explore
+
+## Documentation
+
+::: {.columns style="display:flex; gap:1em;"}
+
+::: {.column width="30%" .bg-blue}
+**Codebook**
+
+Variables, scale anchors, construction rules (e.g., ABC composites), and missing data conventions.
+
+<a href="report.qmd" class="btn btn-primary">Open codebook</a>
+
+Blah Blah [@bion2018; @wickham2015].
+:::
+
+::: {.column width="35%" .bg-blue}
+**Measurement invariance**
+
+Text about your invariance procedure here.
+:::
+
+::: {.column width="30%" .bg-blue}
+**Analytic models**
+
+Text about analytic models here.
+:::
+
+:::
+
+## Governance & ethics
+
+::: {.columns style="display:flex; gap:1em;"}
+::: {.column width="50%" .bg-blue}
+**Access policy**
+
+Tiered access (Public/Partner). Partner access requires a Data Use Agreement, approval by the steering committee, and compliance with GDPR and local IRB requirements.
+
+ACCESS_POLICY.html
+
+:::
+::: {.column width="50%" .bg-blue}
+**Contributing**
+
+Intake template, QC pipeline, authorship (CRediT), citation norms, and preregistration requirements for contributed studies.
+
+CONTRIBUTING.html
+
+:::
+:::
+
+<br> 
+
+::: {.columns style="display:flex; gap:1em;"}
+::: {.column width="50%" .bg-blue}
+**Ethics template**
+
+Boilerplate for local IRB submissions, consent language, and cross‑border data transfer statements.
+
+ETHICS_TEMPLATE.html
+
+:::
+::: {.column width="50%"  .bg-blue}
+**Roadmap**
+
+v1 (inventory & metadata) → v2 (harmonized aggregates) → v3 (MI report + dashboard) → v4 (external contributions).
+
+⌘
+Annual DOI snapshot
+:::
+
+:::
+
+### References
+
+::: {#refs}
+:::
+
