@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: docs
-
 website:
   title: "Motivation & Democracy Data Hub"
  #image: "datahublogo.png"
@@ -22,13 +21,13 @@ website:
     logo: "datahublogo.png"
     logo-alt: "logo."
     #collapse-below: lg
-    style: "fixed"
+   # style: "fixed"
     right:
       - icon: github
         href: https://github.com/Watjoa
         aria-label: Quarto GitHub
     left:
-      - text: "Note"
+      - text: "Purpose"
         href: index.qmd#concept-note
       - text: "Explore"
         href: index.qmd#explore
@@ -36,6 +35,8 @@ website:
         href: index.qmd#documentation
       - text: "Governance & ethics"
         href: index.qmd#governance-ethics
+      - text: "Literature overview"
+        href: LiteratureOverview.qmd
     
 
 bibliography: references.bib

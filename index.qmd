@@ -9,14 +9,15 @@ csl: apa.csl
 
 # Toward a Psychology of Democratic Well‑Being
 
-#### A curated, living repository that integrates cross‑national, longitudinal, and experimental evidence on how democratic contexts shape psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well‑being and civic engagement. Built for cumulative, open, and policy‑relevant science.
+#### A curated, living repository that integrates cross‑national, longitudinal, and experimental evidence on how democratic contexts shape, and are shaped by, psychological basic needs (autonomy, competence, relatedness) and, in turn, citizens’ well‑being and civic engagement. Built for cumulative, open, and policy‑relevant science.
+
 :::
 ::: {.column width="35%"}
 ![](datahublogo.png)
 :::
 :::
 
-## Concept note
+## Purpose
 
 ::: {.columns style="display:flex; gap:1em;"}
 ::: {.column width="52%" .bg-blue}
